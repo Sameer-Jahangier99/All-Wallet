@@ -1,0 +1,362 @@
+:root {
+  --primary-color: #3b82f6;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* font weight */
+
+.weight-800 {
+  font-weight: 800;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+.weight-500 {
+  font-weight: 500;
+}
+
+/* color */
+.primary-color {
+  color: var(--primary-color);
+}
+
+/********** Header NavBar Styling ******** */
+.get-started-btn {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 3px 10px;
+  font-weight: 500;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.get-started-btn:hover {
+  background: #5f9bfb !important;
+  color: #ffffff !important;
+}
+
+.colorfull-icon {
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+.colorless-icon {
+  width: 25px;
+  height: 25px;
+  display: inline;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+.dropdown-menu {
+  --bs-dropdown-link-hover-bg: rgba(219, 234, 254, 1) !important;
+}
+
+.play-store-li:hover .colorfull-icon {
+  display: inline;
+}
+.play-store-li:hover .colorless-icon {
+  display: none;
+}
+
+.app-store-li:hover .colorfull-icon {
+  display: inline;
+}
+.app-store-li:hover .colorless-icon {
+  display: none;
+}
+
+.web-app-li:hover .colorfull-icon {
+  display: inline;
+}
+.web-app-li:hover .colorless-icon {
+  display: none;
+}
+
+/************ Hero Banner Section ************/
+
+.text-aliign-justify {
+  text-align: justify;
+}
+
+.hero-bg {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  clip-path: polygon(0 0, 81% 0, 62% 90%, 0% 100%);
+}
+.relative-position {
+  position: relative;
+}
+
+.hero-text-container {
+  height: 90%;
+}
+
+.hero-get-started-btn {
+  background: #ffffff;
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hero-get-started-btn:hover {
+  background: #5f9bfb !important;
+  color: #ffffff !important;
+}
+
+.mobile-get-btn {
+  display: none;
+}
+.mobile-get-btn button {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 3px 10px;
+  font-weight: 500;
+}
+.mobile-get-btn button:hover {
+  background: #ececec !important;
+  color: var(--primary-color) !important;
+}
+
+/* ********* Finance Section ****** */
+.finance-section h3 {
+  font-size: 37px;
+}
+
+/* ********* Side Bar *********** */
+
+.side-mobile-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+/* ******* FAQ Section ****** */
+
+.faq-bg {
+  background: var(--primary-color);
+}
+
+/* Accordian CSS */
+.accordion {
+  --bs-accordion-border-width: unset !important;
+  --bs-accordion-active-color: unset !important;
+  --bs-accordion-border-radius: 15px !important;
+  --bs-accordion-btn-focus-border-color: unset !important;
+  outline: none !important;
+  --bs-accordion-btn-focus-box-shadow: unset !important;
+}
+.accordion-body {
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 23px;
+  font-family: "Raleway";
+}
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.accordion-button {
+  border-radius: 15px !important;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 24px;
+}
+.accordion-button::after {
+  background-image: url("../assets/down-arrow.png") !important;
+}
+.accordion-item:not(:first-of-type) {
+  margin-top: 20px;
+}
+.accordion-item {
+  border-radius: 15px;
+  background: var(--primary-color);
+}
+
+/* ********** Friendly Icon Section ******** */
+
+/* .firendly-icon-section {
+  padding: 10px 20px;
+} */
+.firendly-icon-section .icon-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.firendly-icon-section h5 {
+  font-weight: 700;
+}
+.firendly-icon-section p {
+  font-weight: 400;
+  font-size: 16px;
+}
+.icon-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* ******* App Perfectly Section ****** */
+.app-perfectly-section {
+  background: rgba(59, 130, 246, 0.15);
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+.perfectly-image-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 17%);
+}
+/* .perfectly-image-section img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+} */
+.perfectly-image-section img {
+  width: 900px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* ********* Blog Section ******** */
+
+.blog-section {
+  margin-top: 350px;
+}
+
+.blog-section .card {
+  border: 1px solid #e9e4e4;
+  box-shadow: 5px 5px 5px 5px #f5f5f5;
+}
+
+.blog-cards img {
+  padding: 5px;
+}
+
+.blog-cards .card-text {
+  color: #4f4f4f;
+  font-weight: 500;
+}
+
+.blog-cards .card-footer {
+  background: white !important;
+  border-top: none !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.blog-body h6 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+.profile-avatar img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  padding: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.blog-cards .card-footer p {
+  margin-bottom: 0px !important;
+  font-size: 13px;
+}
+
+.article-btn {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 3px 10px;
+  font-weight: 500;
+  box-shadow: 0px 5px 4px 4px #e9e6e6;
+}
+
+.article-btn:hover {
+  background: #5f9bfb !important;
+  color: #ffffff !important;
+}
+
+/* ****** Footer ******* */
+
+.footer-bg {
+  background-color: var(--primary-color);
+}
+.footer-bg i {
+  cursor: pointer;
+}
